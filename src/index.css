@@ -9,9 +9,7 @@
   --primary-light: #709dff;
 }
 
-.icon {
-  color: var(--primary-dark);
-}
+
 
 @layer base {
   body {
@@ -37,6 +35,9 @@
     @apply px-6 py-3 bg-purple-800 text-white rounded-md
   }
   .icon {
-    @apply text-2xl cursor-pointer
+    @apply text-4xl cursor-pointer
+  }
+  .active {
+    @apply text-primary;
   }
 }

@@ -36,7 +36,7 @@ const Skills = () => {
                 </p>
                 <div data-aos="zoom-in" className="grid grid-cols-2 text-xl text-purple-900 gap-6">
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 ">
                      
                       <p>ReactJs</p>
                     </div>

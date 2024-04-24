@@ -16,7 +16,7 @@ const Landing = () => {
                 <p className='font-xl m-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur animi ullam laborum sit, temporibus expedita eos ipsum molestiae. Perspiciatis totam deserunt earum cum consequatur voluptatum adipisci fugiat fugit atque!  </p>
                <div className='flex justify-between my-6 gap-6 items-center '>
                <div className='  bg-blue-600 text-white text-xl rounded-[50%]'>
-            <a href="mailto:aanchalsubedi005@gmail.com"><BiLogoGmail  className='m-1'/></a>
+            <a href="mailto:aanchalsubedi005@gmail.com"><BiLogoGmail  className='icon m-1'/></a>
             </div> 
            
            <div className=''>

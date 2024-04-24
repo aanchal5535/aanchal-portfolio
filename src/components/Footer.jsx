@@ -12,10 +12,7 @@ const sections = [
     title: "About Us",
     items: ["Our Story", "Media", "Partner"],
   },
-  {
-    title: "Travel Center",
-    items: ["Flights", "Travel Advice", "Customer Support"],
-  },
+  
   {
     title: "About The Site",
     items: ["User Agreement", "Terms Of Service", "Privacy Policy"],
@@ -36,7 +33,7 @@ const items = [
 
 const Footer = () => {
   return (
-    <div className="w-full mt-24 bg-slate-900 text-gray-300 py-y px-2">
+    <div className="w-full  bg-slate-900 text-gray-300 py-y px-2">
       <div className="max-w-full mx-auto px-4 grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
         {sections.map((section, index) => (
           <div key={index}>
