@@ -3,7 +3,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import {FaFacebook,FaTwitter,FaInstagram,FaPinterest,FaYoutube,} from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import CV from '../assests/AanchalResume .pdf'
+import CV from '../assests/AanchalResume 1.pdf'
 
 
 const Navbar = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ME from'../assests/me1.jpg'
 import {FaGithub} from 'react-icons/fa';
-import CV from '../assests/AanchalResume .pdf'
+import CV from '../assests/AanchalResume 1.pdf'
 import { BiLogoGmail } from "react-icons/bi";
 
 
