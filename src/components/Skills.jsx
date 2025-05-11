@@ -1,64 +1,71 @@
 import React from "react";
 import SkillImage from "../assests/skills.jpg";
-
+import { FaReact, FaGithub } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <>
-      <div className="min-h-[550px] bg-gray-100">
-        <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0 ">
-          <div className="container">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-          
-              <div data-aos="flip-up">
-                <img
-                  src={SkillImage}
-                  alt="skills"
-                  className="max-w-[450px] h-[350px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
-                />
+    <section className="bg-gray-100 py-16">
+      <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Skill Image */}
+        <div data-aos="flip-up" className="flex justify-center">
+          <img
+            src={SkillImage}
+            alt="Skills"
+            className="w-full max-w-md h-auto rounded-lg shadow-xl object-cover"
+          />
+        </div>
+
+        {/* Text Content */}
+        <div className="flex flex-col justify-center gap-6">
+          <h2
+            data-aos="fade-up"
+            className="text-3xl md:text-4xl font-bold text-gray-800"
+          >
+            My Technical Toolbox
+          </h2>
+          <p
+            data-aos="fade-up"
+            className="text-gray-700 text-lg leading-relaxed"
+          >
+            I'm proficient in building responsive, scalable, and accessible web
+            applications. My workflow is driven by a solid foundation in modern
+            frontend technologies, with a strong emphasis on clean code,
+            performance, and user experience.
+          </p>
+
+          {/* Skills Grid */}
+          <div
+            data-aos="zoom-in"
+            className="grid grid-cols-2 gap-6 text-lg text-purple-800 font-medium"
+          >
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <FaReact className="text-2xl text-blue-500" />
+                <p>React.js</p>
               </div>
-             
-              <div className="flex flex-col justify-center gap-6 sm:pt-0 lg:px-16">
-                <h1
-                  data-aos="fade-up"
-                  className="text-3xl sm:text-4xl font-bold"
-                >
-                  
-                </h1>
-                <p
-                  data-aos="fade-up"
-                  className=" text-xl tracking-wide leading-8"
-                >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Eaque reiciendis inventore iste ratione ex alias quis magni at
-                  optio ratione ex alias quis magni at optio
-                  <br />
-                </p>
-                <div data-aos="zoom-in" className="grid grid-cols-2 text-xl text-purple-900 gap-6">
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4 ">
-                     
-                      <p>ReactJs</p>
-                    </div>
-                    <div className="flex items-center gap-4">
-                      
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                     
-                      <p>GitHub</p>
-                    </div>
-                    
-                  </div>
-                </div>
+              <div className="flex items-center gap-3">
+                <SiTailwindcss className="text-2xl text-cyan-500" />
+                <p>Tailwind CSS</p>
               </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <FaGithub className="text-2xl text-black" />
+                <p>GitHub / Git</p>
+              </div>
+              {/* Add more skills if needed */}
+              {/* Example:
+              <div className="flex items-center gap-3">
+                <SiJavascript className="text-2xl text-yellow-500" />
+                <p>JavaScript</p>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

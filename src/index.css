@@ -35,7 +35,7 @@
     @apply px-6 py-3 bg-purple-800 text-white rounded-md
   }
   .icon {
-    @apply text-4xl cursor-pointer
+    @apply text-gray-700 hover:text-purple-600
   }
   .active {
     @apply text-primary;

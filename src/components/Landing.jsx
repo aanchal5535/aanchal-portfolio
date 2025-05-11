@@ -1,44 +1,59 @@
-import React from 'react'
-import ME from'../assests/me1.jpg'
-import {FaGithub} from 'react-icons/fa';
-import CV from '../assests/AanchalResume 1.pdf'
+import React from 'react';
+import ME from '../assests/me1.jpg';
+import { FaGithub } from 'react-icons/fa';
 import { BiLogoGmail } from "react-icons/bi";
-
+import CV from '../assests/AanchalResume 1.pdf';
 
 const Landing = () => {
   return (
-  <section className='w-full py-24 flex flex-col-2 items-center justify-center bg-slate-50 '>
-        <div className="flex  items-center justify-between pb-5">
-        <div className="pl-24 w-full flex flex-col items-center justify-between mt-28">
-               <h3>Hello, It's Me</h3>
-                <h1 className='text-5xl font-bold '> Aanchal Subedi</h1>
-                <h3>And I'm a <span className='text-purple-500'>Frontend  Developer.</span></h3>
-                <p className='font-xl m-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur animi ullam laborum sit, temporibus expedita eos ipsum molestiae. Perspiciatis totam deserunt earum cum consequatur voluptatum adipisci fugiat fugit atque!  </p>
-               <div className='flex justify-between my-6 gap-6 items-center '>
-               <div className='  bg-blue-600 text-white text-xl rounded-[50%]'>
-            <a href="mailto:aanchalsubedi005@gmail.com"><BiLogoGmail  className='icon m-1'/></a>
-            </div> 
-           
-           <div className=''>
-            <a href="https://github.com/aanchal5535"><FaGithub className='icon' /></a>
-            </div> 
-           
+    <section className="w-full bg-slate-50 pt-24">
+      <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 gap-10">
+        {/* Left Content */}
+        <div className="w-full md:w-1/2 flex flex-col items-start justify-center text-center md:text-left">
+          <h3  data-aos="fade-up" className="text-xl text-gray-600">Hello, It's Me</h3>
+          <h1  data-aos="fade-up" className="text-5xl font-bold text-black mt-2">Aanchal Subedi</h1>
+          <h3  data-aos="fade-up" className="text-2xl mt-2 text-gray-700">
+            And I'm a <span className="text-purple-600 font-semibold">Frontend Developer</span>
+          </h3>
+          <p  data-aos="fade-up" className="text-lg mt-4 text-gray-700 leading-7">
+            I'm a detail-oriented and passionate frontend developer who loves turning design concepts into responsive,
+            functional, and user-friendly web experiences. I specialize in React.js and modern CSS frameworks like Tailwind CSS.
+            My goal is to build accessible, scalable, and performant digital solutions.
+          </p>
+
+          {/* Contact Icons */}
+
+          <div className="flex items-center gap-6 mt-6">
+            <a href="mailto:aanchalsubedi005@gmail.com" className="text-blue-600 bg-gray-200 rounded-full p-1 hover:text-blue-800 text-2xl">
+              <BiLogoGmail />
+            </a>
+            <a href="https://github.com/aanchal5535" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 text-2xl">
+              <FaGithub />
+            </a>
           </div>
-          <div className='hidden  gap-5 cursor-pointer md:flex'>
-       <a href={CV}download className=' bg-purple-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0'>Download Cv</a>
-      </div>
-         
-        </div>
+
+          {/* Download CV */}
+          <a
+            href={CV}
+            download
+            className="inline-block bg-purple-700 hover:bg-purple-800 text-white mt-8 px-6 py-3 rounded-md text-lg font-medium transition duration-300"
+          >
+            Download CV
+          </a>
        
-      </div>
-      <div className="w-full flex flex-col-2  items-center justify-center gap-[15%] pt-5">
-        <div className="pl-24 w-full h-[500px]  flex items-center justify-center">
-          <img src={ME} alt='About ' className='w-[400px] h-[500px] rounded-[50%]'/>
+        </div>
+
+        {/* Right Image */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src={ME}
+            alt="Aanchal Subedi"
+            className="w-72 h-72 sm:w-96 sm:h-96 rounded-full object-cover shadow-lg"
+          />
         </div>
       </div>
-    
-  </section>
-  )
-}
+    </section>
+  );
+};
 
 export default Landing;

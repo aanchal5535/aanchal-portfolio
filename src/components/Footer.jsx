@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegCopyright } from "react-icons/fa";
 import {
   FaFacebook,
   FaGithub,
@@ -21,6 +22,10 @@ const sections = [
     title: "Legal",
     items: ["Claims", "Privacy", "Terms", "Policies", "Conditions"],
   },
+   {
+    title:"Contact Us",
+    items: ["(977)9842605922", "aanchalsubedi005@gmail.com"],
+  }
 ];
 
 const items = [
@@ -33,14 +38,14 @@ const items = [
 
 const Footer = () => {
   return (
-    <div className="w-full  bg-slate-900 text-gray-300 py-y px-2">
-      <div className="max-w-full mx-auto px-4 grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
+    <div  data-aos="fade-up" className="w-full  bg-slate-900 text-gray-300 px-2 md:flex-col">
+      <div className="max-w-full mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-y-6 gap-x-4 border-b-2 border-gray-600 py-8">
         {sections.map((section, index) => (
           <div key={index}>
-            <h6 className="font-bold uppercase pt-2">{section.title}</h6>
+            <h6 className="font-semibold text-base md:text-lg uppercase pt-2">{section.title}</h6>
             <ul>
               {section.items.map((item, i) => (
-                <li key={i} className="py-1 px-0 text-gray-500 hover:text-white">
+                <li key={i} className="py-1 px-0 text-gray-500 text-sm leading-7 hover:text-white">
                   {item}
                 </li>
               ))}
@@ -53,9 +58,9 @@ const Footer = () => {
           <p className="py-4">
             The latest news, articles, and resources, sent to your inbox weekly.
           </p>
-          <form className="flex flex-col sm:flex-row">
+          <form className="flex flex-col sm:flex-row w-full">
             <input
-              className="w-full p-2 mr-4 rounded-md mb-4"
+              className="w-full p-4 sm:w-2/3 sm:mr-4 rounded-md mb-4"
               type="email"
               placeholder="Enter email.."
             />
@@ -64,11 +69,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
-        <p className="py-4">2022 Workflow, LLC. All rights reserved</p>
-        <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between px-2 py-4 text-gray-500">
+        <p className="py-4 flex"><FaRegCopyright className="mt-1"/>2025 by Aanchal. All rights reserved.</p>
+        <div className="flex space-x-4 justify-end sm:w-[300px] pt-4 text-2xl">
           {items.map((x, index) => {
-            return <x.icon key={index} className="hover:text-white" />;
+            <a href={x.link} target="_blank" rel="noreferrer" key={index} aria-label={x.name}>
+              <x.icon  className="hover:text-black" />
+              </a>
+
           })}
         </div>
       </div>
