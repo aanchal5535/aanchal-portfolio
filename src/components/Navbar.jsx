@@ -38,6 +38,9 @@ const Navbar = () => {
           <NavLink to='/projects' className='p-2 hover:text-purple-500'>Projects</NavLink>
         </li>
         <li>
+          <NavLink to='/blog' className='p-2 hover:text-purple-500'>Blog</NavLink>
+        </li>
+        <li>
           <NavLink to='/contact' className='p-2 hover:text-purple-500'>Contact</NavLink>
         </li>
       </ul>
@@ -75,6 +78,9 @@ const Navbar = () => {
               Projects
             </NavLink>
           </li>
+          <li>
+          <NavLink to='/blog' className='p-2 hover:text-purple-500'>Blog</NavLink>
+        </li>
           <li>
             <NavLink to='/contact' onClick={closeMenu} className='border-b pb-2'>
               Contact

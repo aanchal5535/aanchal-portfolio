@@ -59,7 +59,7 @@ const Testimonals = () => {
             </div>
         </div>
         </div>
-       <div className='w-full lg:w-1/2 block text-center'>
+       <div data-aos="fade-up" className='w-full lg:w-1/2 block text-center'>
       
 
                     <Swiper className='w-full lg:w-[70%] h-fit shadow shadow-blue-600  rounded-xl mx-auto px-4 py-16 md:h-96'

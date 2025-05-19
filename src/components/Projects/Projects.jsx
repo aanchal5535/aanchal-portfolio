@@ -76,8 +76,8 @@ const data=[
 const Projects = () => {
   return (
     <section  className="w-full py-24 flex flex-col items-center justify-center bg-slate-50">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+    <h1 className="text-4xl font-bold text-gray-800 mb-2">Projects</h1>
+ <p className="text-gray-600">My Recent Works</p>
 
       <div data-aos="slide-down">
       <div className="grid grid-cols-2 mx-5 lg:grid-cols-4 gap-6 pt-4">
